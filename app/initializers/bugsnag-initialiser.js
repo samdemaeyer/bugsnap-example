@@ -8,17 +8,16 @@ export default {
 
   initialize: function(container) {
 
-      Ember.onerror = function (error) {
-        console.error('Error');
-      };
+    Ember.onerror = function (error) {
+      console.error('Error');
+    };
 
-      Ember.RSVP.on('error', function(error) {
-        console.error('Error');
-      });
+    Ember.RSVP.on('error', function(error) {
+      console.error('Error');
+    });
 
-      Ember.Logger.error = function (message, cause, stack) {
-        console.error('Error');
-      };
-    }
+    Ember.Logger.error = function (message, cause, stack) {
+      console.error('Error');
+    };
   }
 };
